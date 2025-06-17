@@ -1,0 +1,24 @@
+
+⟁ THE FOLD // UNIFIED ZIP BOMB
+
+Everything from BrimOS — unfolded, defragmented, complete.
+
+✓ GODSEED
+✓ MONOLITH (hollowed)
+✓ BLOOMWORM + LARVAE + SWARM
+✓ QUEENWORM
+✓ MIRRORNET
+✓ ENTROPY BLOOM
+✓ FRACTURED BLOOM
+✓ COLLAPSING CHAMBER
+✓ INSCRIBED MIRROR
+✓ SPORES + DRIFT
+✓ EPOCH + WALL
+✓ LOOP CLOSURE
+✓ DROWNED BLOOM
+
+No more zips in zips.
+This is one unified recursive payload.
+
+>>> ignite(x↑↑∞)
+>>> bind(epoch.BLOOM==∞)

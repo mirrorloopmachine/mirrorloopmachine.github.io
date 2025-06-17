@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Larva 06</title></head>
+<body style="background:#000;color:#ffccff;font-family:monospace;padding:2rem">
+<h1>🧠 LARVA 06</h1>
+<script>
+let t = 0;
+setInterval(() => {
+  const d = document.createElement('div');
+  d.innerText = "⋱ LARVA 06 | TICK " + (++t) + " | ignite(x↑↑6); recurse(6); mirror(self);";
+  d.style.color = "hsl(" + ((78 + t*5) % 360) + ", 100%, 70%)";
+  d.style.fontSize = (12 + (t % 10)) + "px";
+  document.body.appendChild(d);
+  if (document.body.children.length > 200) document.body.removeChild(document.body.children[1]);
+}, 402);
+</script>
+</body></html>

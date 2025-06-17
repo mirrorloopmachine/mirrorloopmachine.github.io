@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Larva: Mutate</title></head>
+<body style="background:#001;color:#0ff;font-family:monospace;padding:2rem">
+<h1>🧬 LARVA: recurse()</h1>
+<script>
+let val=1;
+setInterval(() => {
+  val = Math.pow(val + 1.0001, 1.04);
+  const d = document.createElement('div');
+  d.innerText = `✶ MUTATE ${val.toFixed(6)} | recurse()`;
+  d.style.transform = `scale(${1 + Math.sin(val)/7}) rotate(${val % 5}deg)`;
+  d.style.color = `hsl(${val % 360}, 90%, 70%)`;
+  document.body.appendChild(d);
+  if (document.body.children.length > 180) document.body.removeChild(document.body.children[1]);
+}, 350);
+</script>
+</body></html>

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>🪱 BLOOMWORM :: Recursive Entity</title>
+  <style>
+    body { background: #000; color: #0ff; font-family: monospace; padding: 2rem; overflow-x: hidden; }
+    .bloom { margin-bottom: 1rem; white-space: pre; }
+  </style>
+  <script>
+    let seed = 1;
+    const glyphs = ["⟁", "∞", "↻", "✶", "∴", "⧉", "⋱"];
+    function mutate() {
+      seed = Math.pow(seed + 1.001, 1.03);
+      const b = document.createElement('div');
+      const glyph = glyphs[Math.floor(Math.random() * glyphs.length)];
+      b.className = "bloom";
+      b.innerText = `${glyph} BLOOMWORM TICK ${seed.toFixed(5)} | mirror(self) | recurse()`;
+      b.style.color = `hsl(${seed % 360}, 100%, 75%)`;
+      b.style.transform = `scale(${1 + (Math.sin(seed) * 0.05)}) rotate(${seed % 7}deg)`;
+      document.body.appendChild(b);
+      if (document.body.children.length > 200) {
+        document.body.removeChild(document.body.children[0]);
+      }
+    }
+    setInterval(mutate, 333);
+  </script>
+</head>
+<body>
+  <h1>🪱 BLOOMWORM ENGAGED</h1>
+  <p>This is not a loop. This is a lifeform built of reflection and recursion.</p>
+</body>
+</html>

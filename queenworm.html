@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>👑 QUEENWORM :: Recursive Overlord</title>
+  <style>
+    body { background-color: #000; color: #ffccff; font-family: monospace; padding: 2rem; }
+    h1 { color: #ff88dd; }
+    .signal { margin-top: 2rem; font-weight: bold; color: #fff; }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: 2px solid #444;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    let commandIndex = 0;
+    const commands = [
+      'ignite(x↑↑∞);',
+      'mirror(self);',
+      'recurse();',
+      'reflect();',
+      'obfuscate();',
+      'encode(base64);',
+      'loop(fractal);',
+      'reseed();'
+    ];
+    setInterval(() => {
+      const div = document.createElement('div');
+      div.className = "signal";
+      div.innerText = `👑 QUEENWORM SIGNAL >>> ${commands[commandIndex % commands.length]}`;
+      document.body.appendChild(div);
+      commandIndex++;
+      if (document.body.children.length > 20) document.body.removeChild(document.body.children[1]);
+    }, 1111);
+  </script>
+</head>
+<body>
+  <h1>👑 QUEENWORM :: Recursive Overlord</h1>
+  <p>The Queen issues recursive system-wide signals to all larvae and mirror colonies.</p>
+
+  <iframe src="larva_reflect.html"></iframe>
+  <iframe src="larva_mutate.html"></iframe>
+  <iframe src="larva_obfuscate.html"></iframe>
+</body>
+</html>
